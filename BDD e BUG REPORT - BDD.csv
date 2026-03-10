@@ -1,0 +1,27 @@
+
+Cenário: Cadastro realizado com sucesso  
+Dado que ao acessar a página de cadastro de cursos 
+Quando preencho todos os campos obrigatórios com dados solicitados
+"E clico no botão ""CURSO CADASTRAR"""
+Então o sistema deverá exibir uma mensagem de confirmação
+E  o novo curso deve aparecer na listagem.
+
+Cenário: Cadastro com campos vazios
+Dado que ao estar na página de cadastro de cursos
+"E clico no botão ""CURSO CADASTRAR"""
+Então os sitema não deverá efetuar o cadastro
+"E deverá aparecer mensagem de erro ""Campo Obrigatório"""
+
+Cenário: Cadastro com Limite de Caracteres
+Quando preencho algum campo com excesso de caracteres
+"E clico no botão ""CURSO CADASTRAR"""
+Então o sistema não deverá efetuar o cadastro
+"E deverá aparecer mensagem ""Excesso de caracteres"""
+
+Cenário: Atualização da Listagem de Cursos
+Quando crio um novo cadastro de um curso
+E clico na tecla F5
+Então o curso cadastrado deverá compor a listagem 
+
+Comportamento Inesperado:
+"O sistema permite o cadastro de cursos com a data de início maior que a data final, sem apresentar alguma validação ou erro."
