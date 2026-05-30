@@ -1,27 +1,34 @@
-
-Cenário: Cadastro realizado com sucesso  
+CT-001: Cadastro com dados válidos.
+Caso de Teste 001: Cadastrar curso com sucesso 
+Pré-condição: Usuário está na página de cadastro de cursos.
 Dado que ao acessar a página de cadastro de cursos 
 Quando preencho todos os campos obrigatórios com dados solicitados
-"E clico no botão ""CURSO CADASTRAR"""
+"E clico no botão "CURSO CADASTRAR"
 Então o sistema deverá exibir uma mensagem de confirmação
-E  o novo curso deve aparecer na listagem.
+E o novo curso deve aparecer na listagem.
 
-Cenário: Cadastro com campos vazios
+CT-002: Cadastro com campos vazios
+Nome: Validar mensagem de erro ao tentar cadastrar curso com campos obrigatórios vazios
+Pré-condição: Usuário está na página de cadastro de cursos.
 Dado que ao estar na página de cadastro de cursos
-"E clico no botão ""CURSO CADASTRAR"""
+"E clico no botão "CURSO CADASTRAR"
 Então os sitema não deverá efetuar o cadastro
-"E deverá aparecer mensagem de erro ""Campo Obrigatório"""
+"E deverá aparecer mensagem de erro "Campo Obrigatório"
 
-Cenário: Cadastro com Limite de Caracteres
+CT-003: Cadastro com Limite de Caracteres
+Caso de teste: Validar mensagem de erro ao exceder o limite de caracteres
+Pré-condição: Usuário está na página de cadastro de cursos.
 Quando preencho algum campo com excesso de caracteres
-"E clico no botão ""CURSO CADASTRAR"""
+E clico no botão "CURSO CADASTRAR"
 Então o sistema não deverá efetuar o cadastro
-"E deverá aparecer mensagem ""Excesso de caracteres"""
+E deverá aparecer mensagem "Excesso de caracteres"
 
-Cenário: Atualização da Listagem de Cursos
-Quando crio um novo cadastro de um curso
-E clico na tecla F5
-Então o curso cadastrado deverá compor a listagem 
+CT-004: Atualização da Listagem de Cursos
+Caso de teste: Validar atualização da listagem após cadastro de curso
+Dado que estou na página de cadastro de cursos
+E realizei o cadastro de um novo curso com sucesso
+Quando pressiono a tecla F5 para atualizar a página
+Então o curso cadastrado deverá ser exibido na listagem de cursos 
 
 Comportamento Inesperado:
 "O sistema permite o cadastro de cursos com a data de início maior que a data final, sem apresentar alguma validação ou erro."
