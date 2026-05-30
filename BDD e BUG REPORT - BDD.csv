@@ -1,5 +1,5 @@
 CT-001: Cadastro com dados válidos.
-Caso de Teste 001: Cadastrar curso com sucesso 
+Caso de Teste: Cadastrar curso com sucesso 
 Pré-condição: Usuário está na página de cadastro de cursos.
 Dado que ao acessar a página de cadastro de cursos 
 Quando preencho todos os campos obrigatórios com dados solicitados
@@ -8,7 +8,7 @@ Então o sistema deverá exibir uma mensagem de confirmação
 E o novo curso deve aparecer na listagem.
 
 CT-002: Cadastro com campos vazios
-Nome: Validar mensagem de erro ao tentar cadastrar curso com campos obrigatórios vazios
+Caso de teste: Validar mensagem de erro ao tentar cadastrar curso com campos obrigatórios vazios
 Pré-condição: Usuário está na página de cadastro de cursos.
 Dado que ao estar na página de cadastro de cursos
 "E clico no botão "CURSO CADASTRAR"
