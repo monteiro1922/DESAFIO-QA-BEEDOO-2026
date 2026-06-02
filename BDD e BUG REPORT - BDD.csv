@@ -3,7 +3,7 @@ Caso de Teste: Cadastrar curso com sucesso
 Pré-condição: Usuário está na página de cadastro de cursos.
 Dado que ao acessar a página de cadastro de cursos 
 Quando preencho todos os campos obrigatórios com dados solicitados
-E clico no botão "CURSO CADASTRAR"
+E clico no botão CURSO CADASTRAR
 Então o sistema deverá exibir uma mensagem de confirmação
 E o novo curso deve aparecer na listagem.
 
