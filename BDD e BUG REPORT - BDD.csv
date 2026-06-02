@@ -11,7 +11,7 @@ CT-002: Cadastro com campos vazios
 Caso de teste: Validar mensagem de erro ao tentar cadastrar curso com campos obrigatórios vazios
 Pré-condição: Usuário está na página de cadastro de cursos.
 Dado que ao estar na página de cadastro de cursos
-E clico no botão "CURSO CADASTRAR"
+E clico no botão CURSO CADASTRAR
 Então os sitema não deverá efetuar o cadastro
 E deverá aparecer mensagem de erro "Campo Obrigatório"
 
